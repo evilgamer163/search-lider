@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <title>Забор</title>
+</head>
+<body>
+    <div class="main">
+        <div class="form-box" id="box-order">
+            <h1 class="form-title">Заказать забор</h1>
+
+            <form action="" class="form">
+                <label for="input-length" class="label">Длина забора</label>
+                <input type="text" id="input-length" class="input" value="0">
+                <span class="meter">метров</span>
+                <img src="./img/check-input.png" alt="check-input" class="complete-input">
+
+                <label for="input-length" class="label">Высота забора</label>
+                <input type="text" id="input-height" class="input" value="0">
+                <span class="meter">метров</span>
+                <img src="./img/check-input.png" alt="check-input" class="complete-input">
+
+                <label for="input-length" class="label">Материал забора</label>
+                <div class="dropdown">
+                    <div class="dropdown-box">
+                        <input type="text" class="dropdown-input" value="Выберите материал" readonly>
+                        <button class="dropdown-btn dropdown-input">
+                            <img src="./img/arrow.png" alt="">
+                        </button>
+                    </div>
+                    
+                    <ul class="list">
+                        <li class="item">Профнастил 400 Р за м²</li>
+                        <li class="item">Модули 500 Р за м²</li>
+                        <li class="item">Бетон 700 Р за м²</li>
+                        <li class="item">Сетка 200 Р за м²</li>
+                    </ul>
+                </div>
+                <img src="./img/check-input.png" alt="check-input" class="complete-input">
+                
+                <input type="checkbox" id="check" class="check">
+                <label for="check" class="check-label">Нужен монтаж</label>
+                <img src="./img/check-input.png" alt="check-input" class="complete-input">
+                
+                <p class="total-price">Сумма заказа: <span class="sum">0 ₽</span></p>
+
+                <button type="submit" class="form-btn">
+                    <svg class="not-active-btn" width="157" height="58" viewBox="0 0 157 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#filter0_d)">
+                        <path class="btn-fill" d="M4 8C4 4.68629 6.68629 2 10 2H124.856C125.593 2 126.304 2.27131 126.854 2.76219L151.494 24.7622C152.83 25.955 152.83 28.045 151.494 29.2378L126.854 51.2378C126.304 51.7287 125.593 52 124.856 52H10C6.68629 52 4 49.3137 4 46V8Z" fill="url(#paint0_linear)"/>
+                        <path class="btn-stroke" d="M4.5 8C4.5 4.96243 6.96243 2.5 10 2.5H124.856C125.47 2.5 126.062 2.72609 126.521 3.13516L151.161 25.1352C152.274 26.1292 152.274 27.8708 151.161 28.8648L126.521 50.8648C126.062 51.2739 125.47 51.5 124.856 51.5H10C6.96243 51.5 4.5 49.0376 4.5 46V8Z" stroke="url(#paint1_linear)" stroke-opacity="0.8"/>
+                        </g>
+                        <path d="M51.9004 37.3486H50.4766V34H41.5469V37.3486H40.123V32.6465H41.1162C42.0186 31.1289 42.7891 29.2832 43.4277 27.1094C44.0723 24.9355 44.4297 22.9492 44.5 21.1504H50.2744V32.6465H51.9004V37.3486ZM48.7803 32.6465V22.4951H45.8535C45.748 23.9131 45.3936 25.6182 44.79 27.6104C44.1865 29.5967 43.4834 31.2754 42.6807 32.6465H48.7803ZM62.1484 34L60.5488 29.9131H55.3984L53.8164 34H52.3047L57.3848 21.0977H58.6416L63.6953 34H62.1484ZM60.083 28.5684L58.5889 24.5869C58.3955 24.083 58.1963 23.4648 57.9912 22.7324C57.8623 23.2949 57.6777 23.9131 57.4375 24.5869L55.9258 28.5684H60.083ZM74.6025 34H73.1084V22.4775H68.9336L68.6611 24.5869C68.3037 27.3936 67.9873 29.4473 67.7119 30.748C67.4424 32.043 67.085 32.9453 66.6396 33.4551C66.1943 33.9648 65.6025 34.2139 64.8643 34.2021C64.4307 34.2021 64.041 34.1289 63.6953 33.9824V32.7256C64.0117 32.8779 64.3428 32.9541 64.6885 32.9541C64.999 32.9541 65.2686 32.8281 65.4971 32.5762C65.7314 32.3184 65.9365 31.876 66.1123 31.249C66.2939 30.6162 66.5195 29.4209 66.7891 27.6631C67.0645 25.8994 67.3662 23.7285 67.6943 21.1504H74.6025V34ZM85.2988 34H78.1357V21.1504H85.2988V22.4775H79.6299V26.6172H84.9561V27.9355H79.6299V32.6641H85.2988V34ZM95.3184 34H88.1553V21.1504H95.3184V22.4775H89.6494V26.6172H94.9756V27.9355H89.6494V32.6641H95.3184V34Z" fill="white"/>
+                        <defs>
+                        <filter id="filter0_d" x="0" y="0" width="156.496" height="58" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+                        <feOffset dy="2"/>
+                        <feGaussianBlur stdDeviation="2"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                        </filter>
+                        <linearGradient id="paint0_linear" x1="79" y1="2" x2="79" y2="52" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#818387"/>
+                        <stop offset="1" stop-color="#696B6F"/>
+                        </linearGradient>
+                        <linearGradient id="paint1_linear" x1="79" y1="2" x2="79" y2="52" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#7D7F82"/>
+                        <stop offset="1" stop-color="#5E6165"/>
+                        </linearGradient>
+                        </defs>
+                    </svg>
+                </button>
+            </form>
+        </div>
+
+        <div class="form-box" id="box-info">
+            <h1 class="form-title">Пожалуйста, представьтесь</h1>
+
+            <a href="#" class="back-btn">&#8592; <span>Вернуться</span></a>
+            <form action="" class="form form-2">
+                <label for="input-length" class="label">Ваше имя</label>
+                <input type="text" id="input-name" class="input">
+                <img src="./img/check-input.png" alt="check-input" class="complete-input">
+
+                <label for="input-length" class="label">Электронная почта</label>
+                <input type="mail" id="input-mail" class="input">
+                <img src="./img/check-input.png" alt="check-input" class="complete-input">
+
+                <label for="input-length" class="label">Телефон</label>
+                <input type="text" placeholder="+7 (___) ___ - __ - __" id="input-mail" class="input">
+                <img src="./img/check-input.png" alt="check-input" class="complete-input">
+
+                <p class="complete-text">
+                    Вы укомплектовали забор 
+                    <span>длинной 6 метров</span> и 
+                    <span>высотой 2 метра</span> из 
+                    <span>материала</span> профнастил на сумму 
+                    <span>8 400 ₽</span>
+                </p>
+
+                <button type="submit" class="form-btn-2">
+                    <svg width="238" height="58" viewBox="0 0 238 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#filter3_d)">
+                        <path d="M4 8C4 4.68629 6.68629 2 10 2H228C231.314 2 234 4.68629 234 8V46C234 49.3137 231.314 52 228 52H10C6.6863 52 4 49.3137 4 46V8Z" fill="url(#paint3_linear)"/>
+                        <path d="M4.5 8C4.5 4.96243 6.96243 2.5 10 2.5H228C231.038 2.5 233.5 4.96243 233.5 8V46C233.5 49.0376 231.038 51.5 228 51.5H10C6.96244 51.5 4.5 49.0376 4.5 46V8Z" stroke="url(#paint4_linear)" stroke-opacity="0.8"/>
+                        </g>
+                        <path d="M77.9199 27.5576C77.9199 29.6143 77.3984 31.2314 76.3555 32.4092C75.3184 33.5869 73.874 34.1758 72.0225 34.1758C70.1299 34.1758 68.668 33.5986 67.6367 32.4443C66.6113 31.2842 66.0986 29.6494 66.0986 27.54C66.0986 25.4482 66.6143 23.8281 67.6455 22.6797C68.6768 21.5254 70.1416 20.9482 72.04 20.9482C73.8857 20.9482 75.3271 21.5342 76.3643 22.7061C77.4014 23.8779 77.9199 25.4951 77.9199 27.5576ZM67.6807 27.5576C67.6807 29.2979 68.0498 30.6191 68.7881 31.5215C69.5322 32.418 70.6104 32.8662 72.0225 32.8662C73.4463 32.8662 74.5215 32.418 75.248 31.5215C75.9746 30.625 76.3379 29.3037 76.3379 27.5576C76.3379 25.8291 75.9746 24.5195 75.248 23.6289C74.5273 22.7324 73.458 22.2842 72.04 22.2842C70.6162 22.2842 69.5322 22.7354 68.7881 23.6377C68.0498 24.5342 67.6807 25.8408 67.6807 27.5576ZM84.2041 34H82.71V22.4775H78.6406V21.1504H88.2734V22.4775H84.2041V34ZM99.8047 34H98.3105V22.4775H91.71V34H90.2158V21.1504H99.8047V34ZM111.494 24.8945C111.494 26.1953 111.049 27.1973 110.158 27.9004C109.273 28.5977 108.005 28.9463 106.353 28.9463H104.841V34H103.347V21.1504H106.678C109.889 21.1504 111.494 22.3984 111.494 24.8945ZM104.841 27.6631H106.186C107.51 27.6631 108.468 27.4492 109.06 27.0215C109.651 26.5938 109.947 25.9082 109.947 24.9648C109.947 24.1152 109.669 23.4824 109.112 23.0664C108.556 22.6504 107.688 22.4424 106.511 22.4424H104.841V27.6631ZM121.373 34L119.773 29.9131H114.623L113.041 34H111.529L116.609 21.0977H117.866L122.92 34H121.373ZM119.308 28.5684L117.813 24.5869C117.62 24.083 117.421 23.4648 117.216 22.7324C117.087 23.2949 116.902 23.9131 116.662 24.5869L115.15 28.5684H119.308ZM124.687 21.1504H128.316C130.021 21.1504 131.255 21.4053 132.017 21.915C132.778 22.4248 133.159 23.2305 133.159 24.332C133.159 25.0938 132.945 25.7236 132.518 26.2217C132.096 26.7139 131.478 27.0332 130.663 27.1797V27.2676C132.614 27.6016 133.59 28.627 133.59 30.3438C133.59 31.4922 133.2 32.3887 132.421 33.0332C131.647 33.6777 130.563 34 129.169 34H124.687V21.1504ZM126.181 26.6523H128.642C129.696 26.6523 130.455 26.4883 130.918 26.1602C131.381 25.8262 131.612 25.2666 131.612 24.4814C131.612 23.7607 131.354 23.2422 130.839 22.9258C130.323 22.6035 129.503 22.4424 128.378 22.4424H126.181V26.6523ZM126.181 27.918V32.7256H128.861C129.898 32.7256 130.678 32.5264 131.199 32.1279C131.727 31.7236 131.99 31.0938 131.99 30.2383C131.99 29.4414 131.721 28.8555 131.182 28.4805C130.648 28.1055 129.834 27.918 128.738 27.918H126.181ZM136.376 21.1504H137.773V28.2959C137.773 29.6143 137.732 30.8066 137.65 31.873H137.721L144.928 21.1504H146.562V34H145.156V26.9248C145.156 25.7471 145.206 24.5107 145.306 23.2158H145.227L138.011 34H136.376V21.1504ZM154.042 34H152.548V22.4775H148.479V21.1504H158.111V22.4775H154.042V34ZM168.922 30.2559C168.922 31.4453 168.523 32.3682 167.727 33.0244C166.936 33.6748 165.805 34 164.334 34H160.054V21.1504H161.548V26.6348H164.105C165.67 26.6348 166.862 26.9453 167.683 27.5664C168.509 28.1816 168.922 29.0781 168.922 30.2559ZM161.548 32.708H164.176C166.309 32.708 167.375 31.8906 167.375 30.2559C167.375 29.4648 167.1 28.8848 166.549 28.5156C166.004 28.1406 165.128 27.9531 163.921 27.9531H161.548V32.708Z" fill="white"/>
+                        <defs>
+                        <filter id="filter3_d" x="0" y="0" width="238" height="58" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+                        <feOffset dy="2"/>
+                        <feGaussianBlur stdDeviation="2"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                        </filter>
+                        <linearGradient id="paint3_linear" x1="126.541" y1="2" x2="126.541" y2="52" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#818387"/>
+                        <stop offset="1" stop-color="#696B6F"/>
+                        </linearGradient>
+                        <linearGradient id="paint4_linear" x1="126.541" y1="2" x2="126.541" y2="52" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#7D7F82"/>
+                        <stop offset="1" stop-color="#5E6165"/>
+                        </linearGradient>
+                        </defs>
+                    </svg>
+                </button>
+            </form>
+        </div>
+
+        <div class="form-box" id="box-completed">
+            <a href="#" class="close-btn">Закрыть</a>
+            <h1 class="box-complete__title"><span class="name">Татьяна,</span> заказ <span class="order">№ 8675</span> сформирован!</h1>
+            <p class="mail-text">Мы повторили его комплектацию на почту <span class="mail">mail@mail.ru</span></p>
+            <p class="tel-text">В ближайшее время наш специалист свяжется с вами по телефону <span class="phone">+7 (917) 111-22-33</span></p>
+        </div>
+    </div>
+
+    <script src="./dist/main.js"></script>
+</body>
+</html>
