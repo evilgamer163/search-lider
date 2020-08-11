@@ -1,5 +1,5 @@
 'use strict';
 
-import valid from './modules/validForm';
+import inputForms from './modules/inputForms';
 
-valid();
+inputForms();

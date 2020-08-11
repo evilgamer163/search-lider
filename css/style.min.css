@@ -2,7 +2,8 @@ body {
     background-image: url("../img/bg.png");
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: 'Open Sans', sans-serif
+    font-family: 'Open Sans', sans-serif;
+    padding: 30px 0
 }
 
 .form-box {
@@ -13,7 +14,7 @@ body {
     color: #323232;
     padding-top: 39px;
     padding-bottom: 54px;
-    margin-top: 130px;
+    /* margin-top: 30px; */
     position: relative
 }
 
@@ -71,6 +72,7 @@ body {
     box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.15);
     border-radius: 3px;
     outline: none;
+    position: relative;
 }
 
 .dropdown {
@@ -274,6 +276,16 @@ body {
     top: -25px;
     right: 0;
     color: #ffffff
+}
+
+.error-input {
+    position: relative;
+    bottom: 20px;
+    color: #C98E99;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    display: none;
 }
 
 @media (max-width: 500px) {
