@@ -1,5 +1,5 @@
 'use strict';
 
-import inputForms from './modules/inputForms';
+import formOrder from './modules/formOrder';
 
-inputForms();
+formOrder();
